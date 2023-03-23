@@ -64,7 +64,7 @@ ul li img {
 
 .overlay-imagem-link {
     padding: 16px;
-    background-color: rgb(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.7);
     position: absolute;
     bottom: 0;
     left: 0;
