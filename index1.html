@@ -1,28 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt_BR">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Execício jQuery</title>
-    <link rel="stylesheet" type="text/css" href="./main1.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main1.css">
+    <title>Exercício jQuery</title>
 </head>
 
+
+
 <body>
+    <h1>Lista de tarefas</h1>
     <div class="container">
-        <form id="task-form">
-            <h2>Lista de tarefas</h2>
-            <input type="text" id="tasks" required placeholder="Nome da tarefa">
-            <button type="submit">Cadastrar</button>
+        <form>
+
+            <input type="text" required placeholder="Nome da tarefa" id="nova-tarefa">
+
+            <button type="button" onclick="adicionarTarefa()">Cadastrar</button>
+
         </form>
-        <ul id="new-task"></ul>
+        <ul id="tarefas">
+        </ul>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="script" href="main.1.js">
 </body>
-<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-<script src="main.1.js"></script>
+
 
 </html>
