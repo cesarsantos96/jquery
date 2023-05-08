@@ -1,13 +1,13 @@
 $(document).ready(function () {
-    $('#adicionar-tarefa').click(function () {
-        var novaTarefa = $("#nova-tarefa").val();
+    $('button[type="sub"]').click(function () {
+        var novaTarefa = $("#nova-tarefa");
         var novaTarefaLi = $("<li>");
-        var novaTarefaSpan = $("<span>").text(novaTarefa);
-        novaTarefa.append(novaTarefaSpan);
-        $("#tarefas").append(novaTarefaSpan);
-        $("#nova-tarefa").val(" ");
+        var novaTarefaSpan = $("<span>").text(novaTarefa.val());
+        novaTarefaLi.append(novaTarefaSpan);
+        $("#tarefas").append(novaTarefaLi);
+        $("#nova-tarefa").val("");
         novaTarefaSpan.click(function () {
-            $(this).toogleClass("done");
+            $(this).toggleClass("done");
         });
     });
 });
